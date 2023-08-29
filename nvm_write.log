@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+void writeNVM(int *data) {
+  // Write 'data' to NVM
+  FILE *logFile = fopen("nvm_write.log", "a");
+  fprintf(logFile, "%p: %d\n", data,cl *data);
+  fclose(logFile);
+}
